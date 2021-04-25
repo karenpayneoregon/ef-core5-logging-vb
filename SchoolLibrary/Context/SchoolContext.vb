@@ -1,7 +1,8 @@
-﻿Imports Configurations
-Imports ExampleConsoleApplication.Context.Configuration
-Imports ExampleConsoleApplication.Models
+﻿
+Imports Configurations
 Imports Microsoft.EntityFrameworkCore
+Imports SchoolLibrary.Context.Configuration
+Imports SchoolLibrary.Models
 
 Namespace Context
 	Partial Public Class SchoolContext
@@ -22,7 +23,7 @@ Namespace Context
 		Public Overridable Property OfficeAssignments() As DbSet(Of OfficeAssignment)
 		Public Overridable Property OnlineCourses() As DbSet(Of OnlineCourse)
 		Public Overridable Property OnsiteCourses() As DbSet(Of OnsiteCourse)
-		Public Overridable Property People() As DbSet(Of Models.Person)
+		Public Overridable Property People() As DbSet(Of Person)
 		Public Overridable Property StudentGrades() As DbSet(Of StudentGrade)
 		Public Overridable Property WeekDayNames() As DbSet(Of WeekDayName)
 

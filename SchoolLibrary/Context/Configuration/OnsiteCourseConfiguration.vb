@@ -1,6 +1,6 @@
-﻿Imports ExampleConsoleApplication.Models
-Imports Microsoft.EntityFrameworkCore
+﻿Imports Microsoft.EntityFrameworkCore
 Imports Microsoft.EntityFrameworkCore.Metadata.Builders
+Imports SchoolLibrary.Models
 
 Namespace Context.Configuration
 	Public Class OnsiteCourseConfiguration

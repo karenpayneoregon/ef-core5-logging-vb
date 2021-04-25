@@ -6,6 +6,6 @@
 		Public Property Grade() As Decimal?
 
 		Public Overridable Property Course() As Course
-		Public Overridable Property Student() As Models.Person
+		Public Overridable Property Student() As Person
 	End Class
 End Namespace

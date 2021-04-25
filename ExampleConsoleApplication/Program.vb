@@ -1,4 +1,5 @@
-﻿Imports ExampleConsoleApplication.Classes
+﻿
+Imports SchoolLibrary.Classes
 
 Module Program
 	Sub Main()

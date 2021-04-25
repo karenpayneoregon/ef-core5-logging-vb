@@ -1,5 +1,4 @@
-﻿
-Imports ExampleConsoleApplication.Context
+﻿Imports SchoolLibrary.Context
 
 Namespace Classes
 	Public Class Operations

@@ -16,6 +16,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Configurations", "Configura
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExampleConsoleApplication", "ExampleConsoleApplication\ExampleConsoleApplication.vbproj", "{35286FE8-4F46-4DDA-9FE2-CC263F7A304A}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SchoolLibrary", "SchoolLibrary\SchoolLibrary.vbproj", "{CB05DD4B-EDD6-4A69-ABE8-1DCF55F440A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{35286FE8-4F46-4DDA-9FE2-CC263F7A304A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35286FE8-4F46-4DDA-9FE2-CC263F7A304A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35286FE8-4F46-4DDA-9FE2-CC263F7A304A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB05DD4B-EDD6-4A69-ABE8-1DCF55F440A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB05DD4B-EDD6-4A69-ABE8-1DCF55F440A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB05DD4B-EDD6-4A69-ABE8-1DCF55F440A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB05DD4B-EDD6-4A69-ABE8-1DCF55F440A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6DB5EB70-984D-480D-B5C9-F6EB7E88AA55} = {D2D67386-07D3-4FD5-8597-8534F150A67C}
 		{35286FE8-4F46-4DDA-9FE2-CC263F7A304A} = {5BBC8EF2-A6F9-4D70-AB10-279BABC13F61}
+		{CB05DD4B-EDD6-4A69-ABE8-1DCF55F440A7} = {D2D67386-07D3-4FD5-8597-8534F150A67C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B957EDF7-BBFE-4E75-95EF-4FB478986463}
