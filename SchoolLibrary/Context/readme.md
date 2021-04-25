@@ -4,10 +4,7 @@
 
 :heavy_check_mark: Configuration\SchoolContext contains methods for logging choices
 
-**NuGet packages**
 
-- Microsoft.EntityFrameworkCore.SqlServer
-- Newtonsoft.Json
 
 
 ---
