@@ -39,6 +39,17 @@ Namespace Extensions
             File.WriteAllText(fileName, JsonConvert.SerializeObject(list))
 
         End Sub
-
+        ''' <summary>
+        ''' Determine if a value is between two values
+        ''' </summary>
+        ''' <typeparam name="T">Type</typeparam>
+        ''' <param name="value">Value to determine if between lowerValue and upperValue</param>
+        ''' <param name="lowerValue">Lower value</param>
+        ''' <param name="upperValue">Upper value</param>
+        ''' <returns>True if Value is between lowerValue and upperValue</returns>
+        <Runtime.CompilerServices.Extension>
+        Public Function Between(Of T As {Structure, IComparable(Of T)})(value As T, lowerValue As T, upperValue As T) As Boolean
+            Return Comparer(Of T).Default.Compare(value, lowerValue) >= 0 AndAlso Comparer(Of T).Default.Compare(value, upperValue) <= 0
+        End Function
     End Module
 End Namespace
