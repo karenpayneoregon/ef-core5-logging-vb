@@ -7,11 +7,15 @@ Namespace Context.Configuration
 		Implements IEntityTypeConfiguration(Of WeekDayName)
 
 		Public Sub Configure(ByVal entity As EntityTypeBuilder(Of WeekDayName)) Implements IEntityTypeConfiguration(Of WeekDayName).Configure
-			entity.HasKey(Function(e) e.WeekId).HasName("PK_WeekDay")
+
+			entity.HasKey(Function(e) e.WeekId).
+				HasName("PK_WeekDay")
 
 			entity.ToTable("WeekDayName")
 
-			entity.Property(Function(e) e.DayName).IsRequired()
+			entity.Property(Function(e) e.DayName).
+				IsRequired()
+
 		End Sub
 
 

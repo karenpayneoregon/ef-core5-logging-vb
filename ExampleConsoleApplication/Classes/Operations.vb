@@ -1,4 +1,5 @@
-﻿Imports SchoolContext = ExampleConsoleApplication.Context.SchoolContext
+﻿
+Imports ExampleConsoleApplication.Context
 
 Namespace Classes
 	Public Class Operations
@@ -6,6 +7,7 @@ Namespace Classes
 		Public Shared Function DemonstrationLoggingTask() As Task
 
 			Using context As New SchoolContext()
+
 				context.People.FirstOrDefault()
 
 			End Using

@@ -10,10 +10,12 @@ Namespace Extensions
         ''' Prevent Self referencing loop detected
         ''' </summary>
         Private Function SettingsIgnoreReferenceLooping() As JsonSerializerSettings
+
             Return New JsonSerializerSettings With {
                 .Formatting = Formatting.Indented,
                 .ReferenceLoopHandling = ReferenceLoopHandling.Ignore
                 }
+
         End Function
         ''' <summary>
         ''' Format indent
@@ -29,7 +31,7 @@ Namespace Extensions
         ''' <typeparam name="TModel"></typeparam>
         ''' <param name="list"></param>
         ''' <param name="fileName"></param>
-        <System.Runtime.CompilerServices.Extension>
+        <Runtime.CompilerServices.Extension>
         Public Sub ModeListToJson(Of TModel)(ByVal list As List(Of TModel), ByVal fileName As String)
 
             JsonConvert.DefaultSettings = AddressOf SettingsIgnoreReferenceLooping
