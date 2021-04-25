@@ -18,22 +18,27 @@ Public Class Helper
 
         Dim applicationSettings = InitOptions(Of DatabaseSettings)("database")
         Return $"Data Source={applicationSettings.DatabaseServer};" & $"Initial Catalog={applicationSettings.Catalog};" & "Integrated Security=True"
+
     End Function
     ''' <summary>
     ''' Log options
     ''' </summary>
     ''' <returns></returns>
     Public Shared Function LoggingDestination() As LoggingDestination
+
         InitConfiguration()
         Return InitOptions(Of DatabaseSettings)("database").LoggingDestination
+
     End Function
     ''' <summary>
     ''' Log file name
     ''' </summary>
     ''' <returns></returns>
     Public Shared Function LogFileName() As String
+
         InitConfiguration()
         Return InitOptions(Of DatabaseSettings)("database").LogFileName
+
     End Function
     ''' <summary>
     ''' Initialize ConfigurationBuilder
