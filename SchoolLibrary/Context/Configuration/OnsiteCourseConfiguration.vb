@@ -15,7 +15,8 @@ Namespace Context.Configuration
 			entity.Property(Function(e) e.CourseID).
 				ValueGeneratedNever()
 
-			entity.Property(Function(e) e.Days).IsRequired().
+			entity.Property(Function(e) e.Days).
+				IsRequired().
 				HasMaxLength(50)
 
 			entity.Property(Function(e) e.Location).

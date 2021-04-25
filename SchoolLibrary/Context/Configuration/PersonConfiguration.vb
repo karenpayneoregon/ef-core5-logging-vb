@@ -15,7 +15,8 @@ Namespace Context.Configuration
 				IsRequired().HasMaxLength(50)
 
 			entity.Property(Function(e) e.EnrollmentDate).
-				HasColumnType("datetime").HasAnnotation("Relational:ColumnType", "datetime")
+				HasColumnType("datetime").
+				HasAnnotation("Relational:ColumnType", "datetime")
 
 			entity.Property(Function(e) e.FirstName).IsRequired().
 				HasMaxLength(50)

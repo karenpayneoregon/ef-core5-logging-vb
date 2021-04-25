@@ -10,8 +10,12 @@ Namespace Context.Configuration
 
 			builder.ToTable("Course")
 
-			builder.Property(Function(e) e.CourseID).ValueGeneratedNever()
-			builder.Property(Function(e) e.Title).IsRequired().HasMaxLength(100)
+			builder.Property(Function(e) e.CourseID).
+				ValueGeneratedNever()
+
+			builder.Property(Function(e) e.Title).
+				IsRequired().
+				HasMaxLength(100)
 
 			builder.HasOne(Function(d) d.Department).
 				WithMany(Function(p) p.Courses).

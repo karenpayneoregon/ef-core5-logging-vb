@@ -10,7 +10,8 @@ Namespace Context.Configuration
 
 			builder.ToTable("CourseDay")
 
-			builder.Property(Function(e) e.Offered).HasDefaultValueSql("((0))")
+			builder.Property(Function(e) e.Offered).
+				HasDefaultValueSql("((0))")
 
 			builder.HasOne(Function(d) d.DayIndexNavigation).
 				WithMany(Function(p) p.CourseDays).
