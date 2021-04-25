@@ -8,12 +8,13 @@ Namespace Extensions
         ''' <summary>
         ''' Format indent
         ''' Prevent Self referencing loop detected
+        ''' https://www.newtonsoft.com/json/help/html/ReferenceLoopHandlingIgnore.htm
         ''' </summary>
         Private Function SettingsIgnoreReferenceLooping() As JsonSerializerSettings
 
             Return New JsonSerializerSettings With {
-                .Formatting = Formatting.Indented,
-                .ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                    .Formatting = Formatting.Indented,
+                    .ReferenceLoopHandling = ReferenceLoopHandling.Ignore
                 }
 
         End Function

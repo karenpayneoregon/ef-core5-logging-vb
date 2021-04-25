@@ -1,5 +1,4 @@
-﻿
-Imports Configurations
+﻿Imports Configurations
 Imports Microsoft.EntityFrameworkCore
 Imports SchoolLibrary.Context.Configuration
 Imports SchoolLibrary.Models
@@ -7,7 +6,6 @@ Imports SchoolLibrary.Models
 Namespace Context
 	Partial Public Class SchoolContext
 		Inherits DbContext
-		'Implements IDisposable
 
 		Public Sub New()
 		End Sub
