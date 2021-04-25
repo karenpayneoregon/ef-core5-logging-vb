@@ -26,7 +26,7 @@ End Enum
     "Catalog": "School",
     "IntegratedSecurity": "true",
     "UsingLogging": "true",
-    "LoggingDistination": "LogFile",
+    "LoggingDestination": "LogFile",
     "LogFileName": "karen.txt" 
   }
 }
