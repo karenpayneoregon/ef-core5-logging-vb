@@ -103,11 +103,11 @@ Namespace Classes
 
                     RaiseEvent OnIteratePersonGradesEvent(
                         New PersonGrades() With {
-                                                     .PersonID = studentEntity.PersonID,
-                                                     .FirstName = studentEntity.FirstName,
-                                                     .LastName = studentEntity.LastName,
-                                                     .Grade = studentEntity.Grade,
-                                                     .GradeLetter = letterGrade
+                             .PersonID = studentEntity.PersonID,
+                             .FirstName = studentEntity.FirstName,
+                             .LastName = studentEntity.LastName,
+                             .Grade = studentEntity.Grade,
+                             .GradeLetter = letterGrade
                         })
 
                 Next
