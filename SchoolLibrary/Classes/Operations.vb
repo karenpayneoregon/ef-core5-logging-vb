@@ -30,13 +30,13 @@ Namespace Classes
 
                                       Using context As New SchoolContext()
 
-                                          Dim results = Await context.People.
+                                          Dim peopleList = Await context.People.
                                                   Include(Function(person As Person) person.StudentGrades).
                                                   ThenInclude(Function(person As StudentGrade) person.Course).
                                                   Select(Function(person) person).
                                                   ToListAsync()
 
-                                          Return results
+                                          Return peopleList
 
                                       End Using
 
@@ -51,13 +51,13 @@ Namespace Classes
 
             Using context As New SchoolContext()
 
-                Dim results = context.People.
+                Dim peopleList = context.People.
                         Include(Function(person As Person) person.StudentGrades).
                         ThenInclude(Function(person As StudentGrade) person.Course).
                         Select(Function(person) person).
                         ToList()
 
-                Return results
+                Return peopleList
             End Using
 
 
