@@ -1,4 +1,11 @@
-# About
+# EF Core logging in .NET Core 5 VB.NET
+
+Provides basic Entity Framework Core logging code samples.
+
+---
+
+Make sure to read [ConfigurationHelper](https://github.com/karenpayneoregon/ef-core5-logging-vb/blob/master1/Configurations/Documentation/ConfigurationHelper.md) for appsettings.json settings.
+
 
 :heavy_check_mark: Read EF Core connection string from appsettings.json
 
